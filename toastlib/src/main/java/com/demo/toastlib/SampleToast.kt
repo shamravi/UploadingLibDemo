@@ -3,9 +3,9 @@ package com.demo.toastlib
 import android.content.Context
 import android.widget.Toast
 
-public class SampleToast(private val context: Context) {
+object SampleToast {
 
-    fun show(message: String) {
+    fun show(context: Context, message: String) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }
 }
